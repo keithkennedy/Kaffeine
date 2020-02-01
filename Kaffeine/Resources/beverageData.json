@@ -1,0 +1,24 @@
+[
+    {
+        "id":1,
+        "name":"Tea",
+        "caffeineContent":35,
+        "isFavorite":true,
+        "decaffeinated":false
+    },
+    {
+        "id":2,
+        "name":"Tea",
+        "caffeineContent":5,
+        "decaf":true,
+        "isFavorite":false,
+        "decaffeinated":true
+    },
+    {
+        "id":3,
+        "name":"Coke",
+        "caffeineContent":35,
+        "isFavorite":true,
+        "decaffeinated":false
+    }
+]

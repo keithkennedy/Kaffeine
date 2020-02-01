@@ -10,7 +10,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        TabView {
+           RedView()
+             .tabItem {
+                Image(systemName: "phone.fill")
+                Text("Quick Entry")
+              }
+           BlueView()
+             .tabItem {
+                Image(systemName: "tv.fill")
+                Text("Second Tab")
+              }
+        }
+    }
+}
+
+struct RedView: View {
+    //let tea = Beverage(id: 1, name: "Tea", caffeineContent: 32, isFavorite: false)
+    var body: some View {
+        BeverageSelectionView()
+    }
+}
+
+struct BlueView: View {
+    var body: some View {
+        Text("Enter")
     }
 }
 
@@ -19,3 +43,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+
